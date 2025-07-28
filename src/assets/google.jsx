@@ -1,8 +1,8 @@
 import { Button } from "@mui/material";
-import { signInWithPopup } from "firebase/auth";
-import { auth, provider } from "../firebase";
+// import { signInWithPopup } from "../pages/Authentication/firebase";
+import { auth, provider,signInWithPopup } from "../pages/Authentication/firebase";
 import { useNavigate } from "react-router-dom";
-import { storeUserData } from "../services/storage";
+import { storeUserData } from "../pages/Authentication/services/storage";
 
 export const GoogleSignIn = () => {
 

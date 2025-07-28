@@ -1,5 +1,6 @@
 import { EmailIcon, LockIcon } from "../../assets/icons";
 import Forms from "./forms";
+import backImg from "../../assets/images/back_img.png";
 
 export default function Login() {
   const textFiledAttributes = [
@@ -34,7 +35,7 @@ export default function Login() {
 
   return (
     <div className="flex flex-row justify-center bg-[#F3F1F2] ">
-      <img src="images/back_img.png" className="" />
+      <img src={backImg} className="" />
       <Forms formAttributes={loginAttributes} />
     </div>
   );

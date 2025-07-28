@@ -8,12 +8,10 @@ import {
   Button,
 } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
-import { LoginAPI, RegisterAPI } from "../../services/api";
-import { storeUserData } from "../../services/storage";
-import { isAuthenticated } from "../../services/auth";
+import { LoginAPI, RegisterAPI } from "./services/api";
+import { storeUserData } from "./services/storage";
+import { isAuthenticated } from "./services/auth";
 import { VisibilityIcon, VisibilityOffIcon } from "../../assets/icons";
-// import { signInWithPopup } from "firebase/auth";
-// import { auth, provider } from "../../firebase";
 import { GoogleSignIn } from "../../assets/google";
 
 export default function Forms({ formAttributes }) {

@@ -1,5 +1,6 @@
 import { PersonIcon, EmailIcon, LockIcon } from "../../assets/icons";
 import Forms from "./forms";
+import backImg from "../../assets/images/back_img.png";
 
 export default function Register() {
   const textFiledAttributes = [
@@ -43,7 +44,7 @@ export default function Register() {
 
   return (
     <div className="flex flex-row justify-center bg-[#F3F1F2] h-screen">
-      <img src="images/back_img.png" className="" />
+      <img src={backImg} className="" />
       <Forms formAttributes={registerAttributes} />
     </div>
   );
